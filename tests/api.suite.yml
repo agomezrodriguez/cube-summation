@@ -1,0 +1,9 @@
+class_name: CubeSummation
+modules:
+    enabled:
+        - \Helper\Api
+        - PhpBrowser:
+            url: http://local.cube.com
+        - REST:
+            url: http://local.cube.com
+            depends: PhpBrowser
