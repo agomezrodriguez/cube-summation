@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3fc72f9e58a8affb4258751670e1968e",
-    "content-hash": "14bf8134f929d40bd38481c07b986a9e",
+    "hash": "bf75554874f04c81e762c2d72ee5e769",
+    "content-hash": "859ab4c80c5bc38552e664e89b0ccb24",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -297,6 +297,50 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "simplon/redis",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/simplon_redis.git",
+                "reference": "4152ee2d5c70e0db432b7f8a67a995510b4193b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/simplon_redis/zipball/4152ee2d5c70e0db432b7f8a67a995510b4193b5",
+                "reference": "4152ee2d5c70e0db432b7f8a67a995510b4193b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Simplon\\Redis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Simplon Redis Library",
+            "homepage": "https://github.com/fightbulc/simplon_redis",
+            "keywords": [
+                "db",
+                "phpredis",
+                "redis",
+                "wrapper"
+            ],
+            "time": "2015-04-16 15:56:25"
         },
         {
             "name": "slim/php-view",

@@ -1,10 +1,16 @@
 <?php
 // Routes
 
-$app->get('/[{name}]', function ($request, $response, $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+$app->post('/cube', function (\Slim\Http\Request $request, \Slim\Http\Response $response) {
 
-    // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    $this->logger->info("Cube '/' route");
+
+    $input = $request->getParsedBody();
+
+    $cubeOperation = new \Cube\Services\CubeOperation($input);
+
+    if ($cubeOperation->isValid()) {
+        $result = $cubeOperation->execute();
+        return $response->write(json_encode(["result" => $result]));
+    }
 });

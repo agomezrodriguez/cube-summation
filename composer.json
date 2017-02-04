@@ -19,11 +19,19 @@
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8 < 6.0",
-	"herloct/codeception-slim-module" : "^1.0" 
+	    "herloct/codeception-slim-module" : "^1.0"
 },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Cube\\": "src/app/"
+
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Cube\\": "src/app/"
+
         }
     },
 	"scripts": {
